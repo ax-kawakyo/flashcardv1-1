@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単語リストを選ぼう</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 50px; }
+        h1 { color: #333; }
+        .button-list { list-style: none; padding: 0; }
+        .button-list li { margin: 15px 0; }
+        .button-list a {
+            display: inline-block;
+            width: 250px;
+            padding: 15px;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+        .button-list a:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+<body>
+    <h1>どの単語リストで学習する？</h1>
+    <ul class="button-list">
+        <li><a href="flashcard.html?list=words">知っておきたいリスト</a></li>
+        <li><a href="flashcard.html?list=chu1">中学1年生リスト</a></li>
+        <li><a href="flashcard.html?list=chu2">中学2年生リスト</a></li>
+        <li><a href="flashcard.html?list=verb">動詞リスト</a></li>
+    </ul>
+</body>
+</html>
